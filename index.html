@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My Personal Portfolio</title>
+  <meta name="description" content="Welcome to my personal portfolio website showcasing my projects and skills." />
+  <meta name="keywords" content="portfolio, projects, web developer, designer, skills" />
+  <meta name="author" content="Your Name" />
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon" />
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Montserrat:wght@700&display=swap"
+    rel="stylesheet" />
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet" />
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+
+  <!-- Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet" />
+
+  <style>
+    /* Custom quick theme overrides */
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f9fafb;
+      color: #333;
+    }
+
+    h1, h2, h3, h4, h5 {
+      font-family: 'Montserrat', sans-serif;
+      color: #2c3e50;
+    }
+
+    a {
+      color: #27ae60; /* fresh green accent */
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: #1e8449;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ======= Top Bar ======= -->
+  <section id="topbar" class="d-flex align-items-center bg-light py-2">
+    <div class="container d-flex justify-content-center justify-content-md-between">
+      <div class="contact-info d-flex align-items-center">
+        <i class="bi bi-envelope-fill me-2"></i><a href="mailto:hello@yourdomain.com" class="text-decoration-none text-dark">hello@yourdomain.com</a>
+        <i class="bi bi-phone-fill phone-icon ms-4 me-2"></i> +1 234 567 8900
+      </div>
+      <div class="social-links d-none d-md-flex align-items-center">
+        <a href="#" class="me-3 text-dark"><i class="bi bi-twitter"></i></a>
+        <a href="#" class="me-3 text-dark"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="me-3 text-dark"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="text-dark"><i class="bi bi-linkedin"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="d-flex align-items-center shadow-sm bg-white">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <h1 class="logo mb-0"><a href="index.html" class="text-success text-decoration-none">MyPortfolio</a></h1>
+      <!-- Optionally replace with image logo -->
+      <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="MyPortfolio Logo" class="img-fluid"></a> -->
+
+      <nav id="navbar" class="navbar">
+        <ul class="list-unstyled d-flex mb-0 gap-4">
+          <li><a class="nav-link scrollto active text-dark" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto text-dark" href="#about">About</a></li>
+          <li><a class="nav-link scrollto text-dark" href="#services">Services</a></li>
+          <li><a class="nav-link scrollto text-dark" href="#portfolio">Portfolio</a></li>
+          <li><a class="nav-link scrollto text-dark" href="#team">Team</a></li>
+          <li><a class="nav-link scrollto text-dark" href="#contact">Contact</a></li>
+          <li><a class="btn btn-success btn-sm text-white ms-3" href="#about">Get Started</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+
+    </div>
+  </header>
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero">
+    <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="6000">
+
+      <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
+
+      <div class="carousel-inner" role="listbox">
+
+        <!-- Slide 1 -->
+        <div class="carousel-item active" style="background-image: url('assets/img/slide/slide-1.jpg'); background-size: cover; background-position: center;">
+          <div class="carousel-container text-center text-white py-5" style="background: rgba(0, 0, 0, 0.5);">
+            <div class="container">
+              <h2 class="animate__animated animate__fadeInDown fw-bold">Welcome to <span class="text-success">MyPortfolio</span></h2>
+              <p class="animate__animated animate__fadeInUp fs-5">Showcasing my work and skills with passion and dedication.</p>
+              <a href="#about" class="btn btn-success btn-lg animate__animated animate__fadeInUp scrollto">Read More</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="carousel-item" style="background-image: url('assets/img/slide/slide-2.jpg'); background-size: cover; background-position: center;">
+          <div class="carousel-container text-center text-white py-5" style="background: rgba(0, 0, 0, 0.5);">
+            <div class="container">
+              <h2 class="animate__animated animate__fadeInDown fw-bold">Creative Solutions</h2>
+              <p class="animate__animated animate__fadeInUp fs-5">Delivering innovative ideas that bring your vision to life.</p>
+              <a href="#about" class="btn btn-success btn-lg animate__animated animate__fadeInUp scrollto">Read More</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="carousel-item" style="background-image: url('assets/img/slide/slide-3.jpg'); background-size: cover; background-position: center;">
+          <div class="carousel-container text-center text-white py-5" style="background: rgba(0, 0, 0, 0.5);">
+            <div class="container">
+              <h2 class="animate__animated animate__fadeInDown fw-bold">Let's Build Together</h2>
+              <p class="animate__animated animate__fadeInUp fs-5">Collaborate with me to create amazing digital experiences.</p>
+              <a href="#about" class="btn btn-success btn-lg animate__animated animate__fadeInUp scrollto">Read More</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+
+      <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+
+    </div>
+  </section>
+
+</body>
+<main id="main">
+
+  <!-- ======= Featured Services Section ======= -->
+  <section id="featured-services" class="featured-services py-5 bg-light">
+    <div class="container">
+
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6">
+          <div class="icon-box p-4 bg-white shadow-sm rounded text-center h-100">
+            <div class="icon mb-3 text-success fs-1">
+              <i class="bi bi-laptop"></i>
+            </div>
+            <h4 class="title mb-3"><a href="#" class="text-dark text-decoration-none">Web Development</a></h4>
+            <p class="description text-muted">Crafting responsive, fast, and modern websites tailored to your needs.</p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <div class="icon-box p-4 bg-white shadow-sm rounded text-center h-100">
+            <div class="icon mb-3 text-success fs-1">
+              <i class="bi bi-briefcase"></i>
+            </div>
+            <h4 class="title mb-3"><a href="#" class="text-dark text-decoration-none">Project Management</a></h4>
+            <p class="description text-muted">Ensuring timely delivery and quality results through agile methodologies.</p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <div class="icon-box p-4 bg-white shadow-sm rounded text-center h-100">
+            <div class="icon mb-3 text-success fs-1">
+              <i class="bi bi-calendar4-week"></i>
+            </div>
+            <h4 class="title mb-3"><a href="#" class="text-dark text-decoration-none">Consulting Services</a></h4>
+            <p class="description text-muted">Providing expert advice to help grow your business effectively.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section><!-- End Featured Services Section -->
+<!-- ======= About Us Section ======= -->
+<section id="about" class="about py-5">
+  <div class="container">
+
+    <div class="section-title text-center mb-5">
+      <h2>About Us</h2>
+      <p class="text-muted mx-auto" style="max-width: 700px;">
+        We are committed to delivering excellence through innovative solutions and a customer-first approach.
+      </p>
+    </div>
+
+    <div class="row align-items-center">
+      <div class="col-lg-6 order-1 order-lg-2 mb-4 mb-lg-0">
+        <img src="assets/img/about.jpg" class="img-fluid rounded shadow" alt="About Us Image">
+      </div>
+      <div class="col-lg-6 order-2 order-lg-1 content">
+        <h3 class="mb-3">Providing Quality and Value You Can Trust</h3>
+        <p class="fst-italic text-secondary">
+          Our mission is to create meaningful impact through our dedication and expertise.
+        </p>
+        <ul class="list-unstyled mb-4">
+          <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i> Exceptional customer service tailored to your needs.</li>
+          <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i> Innovative and scalable solutions for every challenge.</li>
+          <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i> Commitment to sustainability and ethical practices.</li>
+        </ul>
+        <p class="text-muted">
+          We believe in building long-lasting relationships through transparency, integrity, and consistent quality.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section><!-- End About Us Section -->
+
+<!-- ======= Why Us Section ======= -->
+<section id="why-us" class="why-us py-5 bg-light">
+  <div class="container">
+
+    <div class="row g-4">
+
+      <div class="col-lg-4 col-md-6 content-item text-center p-4 bg-white rounded shadow h-100">
+        <span class="display-4 text-success fw-bold">01</span>
+        <h4 class="my-3">Expertise & Experience</h4>
+        <p class="text-muted">Decades of combined industry experience ensure top-notch results for every project.</p>
+      </div>
+
+      <div class="col-lg-4 col-md-6 content-item text-center p-4 bg-white rounded shadow h-100">
+        <span class="display-4 text-success fw-bold">02</span>
+        <h4 class="my-3">Customer Focus</h4>
+        <p class="text-muted">Your goals drive our strategy, ensuring solutions that truly fit your needs.</p>
+      </div>
+
+      <div class="col-lg-4 col-md-6 content-item text-center p-4 bg-white rounded shadow h-100">
+        <span class="display-4 text-success fw-bold">03</span>
+        <h4 class="my-3">Innovation</h4>
+        <p class="text-muted">We leverage the latest technologies and trends to keep you ahead of the competition.</p>
+      </div>
+
+      <div class="col-lg-4 col-md-6 content-item text-center p-4 bg-white rounded shadow h-100">
+        <span class="display-4 text-success fw-bold">04</span>
+        <h4 class="my-3">Reliability</h4>
+        <p class="text-muted">Consistent delivery and ongoing support you can count on, every time.</p>
+      </div>
+
+      <div class="col-lg-4 col-md-6 content-item text-center p-4 bg-white rounded shadow h-100">
+        <span class="display-4 text-success fw-bold">05</span>
+        <h4 class="my-3">Sustainability</h4>
+        <p class="text-muted">We prioritize eco-friendly practices for a better tomorrow.</p>
+      </div>
+
+      <div class="col-lg-4 col-md-6 content-item text-center p-4 bg-white rounded shadow h-100">
+        <span class="display-4 text-success fw-bold">06</span>
+        <h4 class="my-3">Transparency</h4>
+        <p class="text-muted">Open communication and honest processes ensure trust and satisfaction.</p>
+      </div>
+
+    </div>
+
+  </div>
+</section><!-- End Why Us Section -->
+<!-- Boxicons -->
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+<!-- Swiper CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+
+<!-- AOS CSS -->
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+<!-- AOS JS -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+<script>
+  // Initialize Swiper
+  const swiper = new Swiper('.clients-slider', {
+    loop: true,
+    speed: 600,
+    slidesPerView: 4,
+    spaceBetween: 30,
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    breakpoints: {
+      320: { slidesPerView: 2, spaceBetween: 20 },
+      768: { slidesPerView: 3, spaceBetween: 30 },
+      1024: { slidesPerView: 4, spaceBetween: 30 },
+    },
+  });
+
+  // Initialize AOS
+  AOS.init({
+    duration: 800,
+    easing: 'ease-in-out',
+    once: true,
+    mirror: false
+  });
+</script>
+<div class="row">
+          <div class="col-lg-9 text-center text-lg-start">
+            <h3>Call To Action</h3>
+            <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+          <div class="col-lg-3 cta-btn-container text-center">
+            <a class="cta-btn align-middle" href="#">Call To Action</a>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Cta Section -->
+
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Portfolio</h2>
+          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-app">App</li>
+              <li data-filter=".filter-card">Card</li>
+              <li data-filter=".filter-web">Web</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row portfolio-container">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>App 1</h4>
+                <p>App</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
+                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Web 3</h4>
+                <p>Web</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
+                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>App 2</h4>
+                <p>App</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 2"><i class="bx bx-plus"></i></a>
+                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Card 2</h4>
+                <p>Card</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 2"><i class="bx bx-plus"></i></a>
+                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Web 2</h4>
+                <p>Web</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 2"><i class="bx bx-plus"></i></a>
+                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>App 3</h4>
+                <p>App</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 3"><i class="bx bx-plus"></i></a>
+                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Card 1</h4>
+                <p>Card</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/portfolio-7.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 1"><i class="bx bx-plus"></i></a>
+                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Card 3</h4>
+                <p>Card</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/portfolio-8.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 3"><i class="bx bx-plus"></i></a>
+                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Web 3</h4>
+                <p>Web</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/portfolio-9.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
+                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Section -->
+
+    <!-- ======= Team Section ======= -->
+    <section id="team" class="team section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Team</h2>
+          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div class="member">
+              <img src="assets/img/team/team-1.jpg" alt="">
+              <h4>Walter White</h4>
+              <span>Chief Executive Officer</span>
+              <p>
+                Magni qui quod omnis unde et eos fuga et exercitationem. Odio veritatis perspiciatis quaerat qui aut aut aut
+              </p>
+              <div class="social">
+                <a href=""><i class="bi bi-twitter"></i></a>
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div class="member">
+              <img src="assets/img/team/team-2.jpg" alt="">
+              <h4>Sarah Jhinson</h4>
+              <span>Product Manager</span>
+              <p>
+                Repellat fugiat adipisci nemo illum nesciunt voluptas repellendus. In architecto rerum rerum temporibus
+              </p>
+              <div class="social">
+                <a href=""><i class="bi bi-twitter"></i></a>
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div class="member">
+              <img src="assets/img/team/team-3.jpg" alt="">
+              <h4>William Anderson</h4>
+              <span>CTO</span>
+              <p>
+                Voluptas necessitatibus occaecati quia. Earum totam consequuntur qui porro et laborum toro des clara
+              </p>
+              <div class="social">
+                <a href=""><i class="bi bi-twitter"></i></a>
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Team Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container">
+<!-- ======= Call To Action Section ======= -->
+<section id="cta" class="cta">
+  <div class="container">
+
+    <div class="row">
+      <div class="col-lg-9 text-center text-lg-start">
+        <h3>Call To Action</h3>
+        <p>
+          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </div>
+      <div class="col-lg-3 cta-btn-container text-center">
+        <a class="cta-btn align-middle" href="#">Call To Action</a>
+      </div>
+    </div>
+
+  </div>
+</section><!-- End Cta Section -->
+
+<!-- ======= Portfolio Section ======= -->
+<section id="portfolio" class="portfolio">
+  <div class="container">
+
+    <div class="section-title">
+      <h2>Portfolio</h2>
+      <p>
+        Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. 
+        Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. 
+        Quia fugiat sit in iste officiis commodi quidem hic quas.
+      </p>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-12 d-flex justify-content-center">
+        <ul id="portfolio-flters">
+          <li data-filter="*" class="filter-active">All</li>
+          <li data-filter=".filter-app">App</li>
+          <li data-filter=".filter-card">Card</li>
+          <li data-filter=".filter-web">Web</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="row portfolio-container">
+
+      <!-- Portfolio Items -->
+      <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+        <div class="portfolio-wrap">
+          <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="App 1">
+          <div class="portfolio-info">
+            <h4>App 1</h4>
+            <p>App</p>
+            <div class="portfolio-links">
+              <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Repeat other portfolio items similarly... -->
+
+    </div>
+
+  </div>
+</section><!-- End Portfolio Section -->
+
+<!-- ======= Team Section ======= -->
+<section id="team" class="team section-bg">
+  <div class="container">
+
+    <div class="section-title">
+      <h2>Team</h2>
+      <p>
+        Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. 
+        Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. 
+        Quia fugiat sit in iste officiis commodi quidem hic quas.
+      </p>
+    </div>
+
+    <div class="row">
+      <!-- Team Member 1 -->
+      <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+        <div class="member">
+          <img src="assets/img/team/team-1.jpg" alt="Walter White">
+          <h4>Walter White</h4>
+          <span>Chief Executive Officer</span>
+          <p>Magni qui quod omnis unde et eos fuga et exercitationem. Odio veritatis perspiciatis quaerat qui aut aut aut</p>
+          <div class="social">
+            <a href="#"><i class="bi bi-twitter"></i></a>
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-instagram"></i></a>
+            <a href="#"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Repeat other team members similarly... -->
+
+    </div>
+
+  </div>
+</section><!-- End Team Section -->
+
+<!-- ======= Contact Section ======= -->
+<section id="contact" class="contact">
+  <div class="container">
+
+    <div class="section-title">
+      <h2>Contact</h2>
+      <p>
+        Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. 
+        Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. 
+        Quia fugiat sit in iste officiis commodi quidem hic quas.
+      </p>
+    </div>
+
+    <div class="row">
+
+      <div class="col-lg-5 d-flex align-items-stretch">
+        <div class="info">
+          <div class="address">
+            <i class="bi bi-geo-alt"></i>
+            <h4>Location:</h4>
+            <p>A108 Adam Street, New York, NY 535022</p>
+          </div>
+
+          <div class="email">
+            <i class="bi bi-envelope"></i>
+            <h4>Email:</h4>
+            <p>info@example.com</p>
+          </div>
+
+          <div class="phone">
+            <i class="bi bi-phone"></i>
+            <h4>Call:</h4>
+            <p>+1 5589 55488 55s</p>
+          </div>
+
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" 
+            frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
+        </div>
+      </div>
+
+      <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
+        <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+          <div class="row">
+            <div class="form-group col-md-6">
+              <label for="name">Your Name</label>
+              <input type="text" name="name" class="form-control" id="name" required>
+            </div>
+            <div class="form-group col-md-6 mt-3 mt-md-0">
+              <label for="email">Your Email</label>
+              <input type="email" class="form-control" name="email" id="email" required>
+            </div>
+          </div>
+          <div class="form-group mt-3">
+            <label for="subject">Subject</label>
+            <input type="text" class="form-control" name="subject" id="subject" required>
+          </div>
+          <div class="form-group mt-3">
+            <label for="message">Message</label>
+            <textarea class="form-control" name="message" rows="10" required></textarea>
+          </div>
+          <div class="my-3">
+            <div class="loading">Loading</div>
+            <div class="error-message"></div>
+            <div class="sent-message">Your message has been sent. Thank you!</div>
+          </div>
+          <div class="text-center"><button type="submit">Send Message</button></div>
+        </form>
+      </div>
+
+    </div>
+
+  </div>
+</section><!-- End Contact Section -->
+
+<!-- ======= Footer ======= -->
+<footer id="footer">
+  <div class="container">
+    <h3>Green</h3>
+    <p>Et aut eum quis fuga eos sunt ipsa nihil. Labore corporis magni eligendi fuga maxime saepe commodi placeat.</p>
+    <div class="social-links">
+      <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+      <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+      <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+      <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+      <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+    </div>
+    <div class="copyright">
+      &copy; Copyright <strong><span>Green</span></strong>. All Rights Reserved
+    </div>
+    <div class="credits">
+      Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+    </div>
+  </div>
+</footer><!-- End Footer -->
+
+<!-- Back to top button -->
+<a href="#" class="back-to-top d-flex align-items-center justify-content-center">
+  <i class="bi bi-arrow-up-short"></i>
+</a>
+
+<!-- Vendor JS Files -->
+<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+<script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+<script src="assets/vendor/php-email-form/validate.js"></script>
+
+<!-- Template Main JS File -->
+<script src="assets/js/main.js"></script>
